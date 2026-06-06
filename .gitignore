@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env and secrets
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*.p12
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large archives and binaries
+*.tar
+*.tar.gz
+*.zip
+*.xz
+*.bin
+*.iso
+
+# Logs and outputs
+*.log
+fuzz_results.json
+results.json
+
+# Avoid accidental private dumps
+*credentials*
+*secrets*
+*token*
+*tips*
