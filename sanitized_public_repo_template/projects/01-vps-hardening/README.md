@@ -11,17 +11,20 @@ Establish a safer baseline for remote Linux server administration by enforcing f
 ## Problem Statement
 Default VPS exposure and manual configuration drift increase the risk of unauthorized access and operator lockout. The goal was to harden inbound access while keeping remote administration stable.
 
-## Actions Executed
+## Steps Executed
 1. Assessed baseline firewall and service state.
 2. Applied SSH-safe firewall sequencing:
-	- Explicitly allowed SSH before enabling UFW.
-	- Enabled UFW and verified policy.
+   - Explicitly allowed SSH before enabling UFW.
+   - Enabled UFW and verified policy.
 3. Installed and activated Fail2ban for SSH protection.
 4. Verified service activation and startup persistence.
 5. Re-checked final firewall and security service status.
 
 ## Validation Commands
 ```bash
+chmod +x vps_hardening_baseline_check.sh
+./vps_hardening_baseline_check.sh
+
 sudo ufw status verbose
 sudo systemctl status fail2ban --no-pager
 sudo fail2ban-client status
@@ -55,7 +58,8 @@ fail2ban.service - active (running)
 - Security hardening should be performed as a sequenced runbook with immediate post-change validation.
 - Pairing UFW (network control) with Fail2ban (behavior control) is more robust than using either alone.
 
-## Public-safe Artifacts
+## Export-ready Artifacts
+- Script file: `vps_hardening_baseline_check.sh`
 - Redacted command flow for UFW enablement and verification
 - Redacted Fail2ban activation and status checks
 - Hardening runbook summary for repeatable execution

@@ -28,7 +28,7 @@ fail2ban.service - loaded
 Active: active (running)
 ```
 
-## Post-change Safety Check
+## Post-change Validation
 ```bash
 sudo ss -tuln
 sudo fail2ban-client status
@@ -42,4 +42,4 @@ Fail2ban jail loaded and monitoring active.
 
 ## Notes
 - All IPs, hostnames, usernames, and environment identifiers are removed.
-- Outputs are represented in sanitized format for public sharing.
+- Outputs are represented in sanitized format for controlled external publication.

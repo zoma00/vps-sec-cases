@@ -9,6 +9,7 @@ ip a
 ip route
 sudo ufw status
 sudo systemctl status ssh --no-pager
+sudo fail2ban-client status sshd
 sudo fail2ban-client status sshd | grep -i banned
 ```
 
@@ -23,9 +24,11 @@ Total banned: 2
 ```
 
 ## Recovery Sequence (Sanitized)
+Prerequisite: snapshot, console access, or another safe rollback path prepared before risky remote network changes.
+
 1. Confirmed SSH allow rule before any firewall change.
 2. Confirmed fail2ban was not currently blocking access.
-3. Corrected network/interface settings and restarted services.
+3. Corrected network/interface settings from a safe recovery path and restarted services after configuration corrections.
 4. Re-tested SSH connectivity from local machine.
 
 ## Outcome

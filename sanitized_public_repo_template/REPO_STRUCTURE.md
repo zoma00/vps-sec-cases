@@ -9,14 +9,17 @@ sanitized_public_repo_template/
 ├── .gitignore
 ├── docs/
 │   ├── scope_and_ethics.md
-│   └── evidence_guidelines.md
+│   ├── evidence_guidelines.md
+│   └── script_safety_policy.md
 ├── templates/
 │   └── case_study_template.md
 ├── projects/
 │   ├── 01-vps-hardening/
-│   │   └── README.md
+│   │   ├── README.md
+│   │   └── vps_hardening_baseline_check.sh
 │   ├── 02-network-incident-playbook/
-│   │   └── README.md
+│   │   ├── README.md
+│   │   └── ssh_timeout_triage.sh
 │   └── 03-connection-diagnosis-script/
 │       ├── README.md
 │       └── connection_diagnosis.sh

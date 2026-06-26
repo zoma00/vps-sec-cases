@@ -13,5 +13,5 @@ This portfolio demonstrates defensive IT/security operations work:
 - Any activity that violates laws, contracts, or platform policies
 
 ## Disclosure model
-All examples are sanitized and redacted for public sharing.
+All examples are sanitized and redacted for controlled external publication.
 Sensitive infrastructure and client data are excluded.

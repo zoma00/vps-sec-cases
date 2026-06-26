@@ -2,6 +2,8 @@
 
 Practical Linux VPS security case studies with redacted evidence and step-by-step validation.
 
+This repository also serves as source material for FolioVista Books, where the sanitized case studies can later be shaped into practical guides, field books, and public sample chapters.
+
 Topics: linux, vps, cybersecurity, security-hardening, incident-response, network-troubleshooting, security-operations, system-administration, bash-scripting, case-studies
 
 ## Repository layout note
@@ -36,7 +38,10 @@ If links are opened without this folder prefix, GitHub shows 404.
 This repo is for defensive security operations, reliability, and incident response documentation.
 No offensive or unlawful activity is included.
 
-## Candidate
+## Founder
 - Name: Hazem Adel Elbatawy
+- Role: Founder, FolioVista Books
+- Website: https://www.foliovistabooks.com
+- [contact@foliovistabooks.com](mailto:contact@foliovistabooks.com)
 - LinkedIn: https://www.linkedin.com/in/hazem-el-batawy/
 - GitHub: https://github.com/zoma00

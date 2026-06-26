@@ -7,34 +7,20 @@ sudo ./connection_diagnosis.sh
 
 ## Redacted Execution Snapshot
 ```text
-[1] Interfaces
-<interface inventory captured>
-
-[2] Routes
-<default route and local routes captured>
-
-[3] DNS check
-<resolver responded successfully>
-
-[4] Reachability
-<external reachability check succeeded>
-
-[5] Service ports
-<listening sockets captured>
-
-[6] Firewall status
-Status: active
-
-[7] Recent network logs
-<recent network-related entries captured>
-
+[1] Interfaces .......... Captured
+[2] Routes .............. Captured
+[3] DNS check ........... OK
+[4] Reachability ........ OK
+[5] Service ports ....... Collected
+[6] Firewall status ..... Active
+[7] Recent logs ......... Collected
 Done.
 ```
 
 ## Interpretation Guide
 - If DNS fails but route is present: investigate resolver/network egress.
 - If firewall is active and service unreachable: verify inbound allow rules.
-- If logs show repeated auth/network errors: correlate with SSH and fail2ban checks.
+- If logs show repeated auth or connection errors: follow with SSH service and fail2ban checks outside this script.
 
 ## Redaction Notes
 All infrastructure identifiers, hostnames, and non-essential system details are removed.

@@ -28,6 +28,6 @@
 - [Key takeaway 1]
 - [Key takeaway 2]
 
-## Public-safe Artifacts
+## Export-ready Artifacts
 - [script_name.sh]
 - [sanitized_screenshot.png]
